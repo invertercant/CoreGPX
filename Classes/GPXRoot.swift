@@ -326,8 +326,8 @@ public final class GPXRoot: GPXElement, Codable {
     override func addOpenTag(toGPX gpx: NSMutableString, indentationLevel: Int) {
         let attribute = NSMutableString(string: "")
         
-        attribute.append(" xmlns:xsi=\"\(self.xsi)\"")
-        attribute.append(" xmlns=\"\(self.schema)\"")
+        //attribute.append(" xmlns:xsi=\"\(self.xsi)\"")
+        //attribute.append(" xmlns=\"\(self.schema)\"")
         
         // for extensions attributes to be appended.
         if let extensionAttributes = self.extensionAttributes {
@@ -336,7 +336,7 @@ public final class GPXRoot: GPXElement, Codable {
             }
         }
         
-        attribute.append(" xsi:schemaLocation=\"\(self.schemaLocation)\"")
+        //attribute.append(" xsi:schemaLocation=\"\(self.schemaLocation)\"")
         
         attribute.append(" version=\"\(version)\"")
         
